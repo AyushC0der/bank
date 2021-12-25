@@ -1,0 +1,85 @@
+<html>
+<head>
+    <style>
+        
+        /*
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    */
+        #Login_Enter_ID
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #Bank_Intro_Head_ID{
+            color: blue;
+            font-size: 70px;
+        } 
+        .Enter{
+            display: inline-block;
+            background-color: bisque;
+        }
+
+        #LoginButton_ID{
+            
+            font-size: 30px;
+            color: cornflowerblue;
+            background-color: hotpink;
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0
+            rgba(0,0,0,0.19);
+        }
+        #InvalidPar_ID{
+            font-size: 20px;
+            display: inline-block;
+            background-color: red;
+        }
+
+        Body{
+            display: flex;
+    flex-direction: column;
+        align-items: center;
+        }
+    </style>
+    <title>
+        Bank Thing
+    </title>
+</head>
+<body >
+    <script src = "BankIndexCode.js"></script>
+    <script src="anotherFile.js"></script>
+    <h1 id="Bank_Intro_Head_ID">Bank</h1>
+    <h1>Login</h1>
+    <h3>Welcom Back</h3>
+    <div id="Login_Enter_ID" >
+        <div id="Account_EnterId_ID" class="Enter"><!-- Account Enter ID-->
+            <p>Account ID</p>   
+            <input type="number" id="Account_EnteredId_ID">
+        </div>
+        <br>
+        <br>
+        <div id="Account_EnterUsername_ID" class="Enter"><!-- Account Username-->
+            <p>Username</p>
+            <input type="text" id="Account_EnterUsername_EnteredId_ID">
+        </div>
+        <br>
+        <br>
+        <div id="Account_EnterPassword_ID" class="Enter"><!-- Account Password-->
+            <p>Password</p>
+            <input type="text" id="Account_EnterededPassword_Id">
+        </div>
+        <br><br><br>
+        <input type="button" value="Login" id="LoginButton_ID" onclick="ClickedLogin()"> <!-- Account Login Butt-->
+        <br>
+        <p id="InvalidPar_ID"></p>
+        <br>
+        <div id="ForNew_ID">
+            <p>If You are new </p>
+            <input type="button" value="Make Account" style="font-size: 30px;">
+        </div>
+
+    </div>
+
+</body>
+</html>
